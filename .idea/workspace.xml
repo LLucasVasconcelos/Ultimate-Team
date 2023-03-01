@@ -5,22 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c5d4e7a-ed51-4c72-a4db-d4c5fdcecf89" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ultimate Team.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/Gameplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controllers/Vendas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/JogadorAbstract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/JogadorGoleiro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/JogadorLinha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Mercado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Plantel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/TimeTitular.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/UsuarioGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,14 +33,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/lve43/IdeaProjects/Ultimate Team",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lve43/IdeaProjects/Ultimate Team&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="View.Main" />
@@ -107,12 +92,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Model/UsuarioGame.java</url>
-          <line>109</line>
+          <line>114</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Model/UsuarioGame.java</url>
-          <line>107</line>
+          <line>112</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>

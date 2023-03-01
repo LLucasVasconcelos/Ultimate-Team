@@ -18,7 +18,7 @@ public class TimeTitular {
 
 
     public TimeTitular(int defesa, int meio, int ataque) {
-        if (defesa > 2) {
+        if (defesa >= 2) {
             this.defesa = defesa;
         } else System.out.println("A Defesa tem que ser um valor maior que 2");
         if (ataque <= 4) {
@@ -28,7 +28,7 @@ public class TimeTitular {
             this.meio = meio;
         } else System.out.println("O Meio tem que ser um valor maior que 2");
 
-        if (meio + ataque + defesa > 11) {
+        if (meio + ataque + defesa > 10) {
             System.out.println("Time com mais de 11 jogadores");
         }
     }

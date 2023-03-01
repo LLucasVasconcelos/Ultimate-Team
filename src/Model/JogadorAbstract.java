@@ -42,7 +42,7 @@ public abstract class JogadorAbstract {
 
     public String tipoCarta() {
 
-        if (getOverall() < 64)
+        if (getOverall() <= 64)
             return "BRONZE";
         if (getOverall() > 64 && getOverall() < 75)
             return "PRATA";

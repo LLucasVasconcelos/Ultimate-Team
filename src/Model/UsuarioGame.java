@@ -32,12 +32,12 @@ public class UsuarioGame {
                 getPlantel().getPlantelJogadores().add(jogadorAbstract);
             }
         }
-    getTimeTitular().getJogadoresTitulares().clear();
-    setTimeTitular(new TimeTitular(defesa,meio,ataque));
-    contGoleiro=0;
-    contDefesa=0;
-    contMeio=0;
-    contAtaque=0;
+        getTimeTitular().getJogadoresTitulares().clear();
+        setTimeTitular(new TimeTitular(defesa, meio, ataque));
+        contGoleiro = 0;
+        contDefesa = 0;
+        contMeio = 0;
+        contAtaque = 0;
 
     }
 
@@ -118,31 +118,32 @@ public class UsuarioGame {
         ArrayList<JogadorAbstract> jogadoresnacionais = getTimeTitular().getJogadoresTitulares();
         ArrayList<String> nacionalidades = new ArrayList<>();
         int cont;
+        int maiorQuimica = 0;
         for (JogadorAbstract jogadornacional : jogadoresnacionais) {
-            for (JogadorAbstract jogador : getTimeTitular().getJogadoresTitulares()) {
-                cont = 0;
+            cont = 0;
+            if (!nacionalidades.contains(jogadornacional.getNacionalidade())) {
+                for (JogadorAbstract jogador : getTimeTitular().getJogadoresTitulares()) {
+                    cont = 0;
 
                     if (jogadornacional.getNacionalidade().equalsIgnoreCase(jogador.getNacionalidade())) {
-                        if (!nacionalidades.contains(jogador.getNacionalidade())) {
-                            for (JogadorAbstract jogadorAbstract : getTimeTitular().getJogadoresTitulares()) {
-                                if (jogadorAbstract.getNacionalidade().equalsIgnoreCase(jogador.getNacionalidade())) {
-                                    cont++;
-                                }
-                            }
-
-                            if (cont >= 2 && cont<5) {
-                                setOverallTimeQuimica(getOverralTime()+1);
-                            } else if (cont >= 5 && cont<8) {
-                                setOverallTimeQuimica(getOverralTime()+2);
-                            } else if (cont>=8) {
-                                setOverallTimeQuimica(getOverralTime()+3);
-                            }
-                            nacionalidades.add(jogador.getNacionalidade());
-                        }
+                        cont++;
                     }
+                }
+                if (cont > maiorQuimica) maiorQuimica = cont;
             }
+            nacionalidades.add(jogadornacional.getNacionalidade());
+        }
+        if (maiorQuimica>= 2 && maiorQuimica < 5) {
+            setOverallTimeQuimica(getOverralTime() + 1);
+        } else if (maiorQuimica >= 5 && maiorQuimica < 8) {
+            setOverallTimeQuimica(getOverralTime() + 2);
+        } else if (maiorQuimica >= 8) {
+            setOverallTimeQuimica(getOverralTime() + 3);
         }
     }
+
+
+
 
     public void substituirJogador(String jogadorSaindo, String jogadorEntrando) {
         JogadorAbstract jogadorSai = getTimeTitular().buscarJogadorTimetitular(jogadorSaindo);

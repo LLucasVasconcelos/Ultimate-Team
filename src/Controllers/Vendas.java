@@ -25,6 +25,7 @@ public class Vendas {
             for (JogadorAbstract jogadorAbstract : usuarioGame.getPlantel().getPlantelJogadores()) {
                 if (jogadorAbstract != null)
                     mercado.addJogadores(jogadorAbstract);
+                usuarioGame.setCashCaixa(usuarioGame.getCashCaixa()+ jogadorAbstract.getValor());
             }
             usuarioGame.getPlantel().getPlantelJogadores().clear();
             System.out.println("Usuario não possui dinheiro suficiente pra fechar o time, Logo o plantel esta sendo zerado," +
